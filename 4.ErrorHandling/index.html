@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  function divide() {
+    let numerator = Number(prompt("Please enter Numerator"));
+    let denominator = Number(prompt("Please enter Denominator"));
+
+    try {
+      if (denominator == 0) {
+        throw {
+          error: "Divide by zero",
+          message: "Denominator cannot be zero",
+        };
+      } else {
+        document.write("Result is" + numerator / denominator);
+      }
+    } catch (e) {
+      document.write("Error :" + e.error);
+      document.write("\n andError Message:" + e.message);
+    }
+  }
+
+  divide();
+</script>

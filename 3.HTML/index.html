@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Green Design</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      html,
+      body,
+      object,
+      iframe,
+      h1 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        font-family: arial;
+      }
+
+      header:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        font-family: arial;
+      }
+
+      header nav h2 {
+        height: 0;
+        text-indent: -10000px;
+      }
+
+      header nav li {
+        float: left;
+        margin-left: 20px;
+      }
+
+      header nav span {
+        color: green;
+        margin-left: 20px;
+      }
+
+      #lead-banner img {
+        width: 100%;
+      }
+
+      #lead-banner {
+        max-height: 440px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .banner-overlay {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+      }
+
+      .banner-title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 72px;
+      }
+
+      #lead-banner p {
+        color: #fff;
+        font-size: 24px;
+        max-width: 600px;
+        margin-top: 10px;
+      }
+
+      #lead-banner a {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#51b205+0,3c9e0a+100 */
+        background: #51b205; /* Old browsers */
+        background: -moz-linear-gradient(
+          top,
+          #51b205 0%,
+          #3c9e0a 100%
+        ); /* FF3.6+ */
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0%, #51b205),
+          color-stop(100%, #3c9e0a)
+        ); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(
+          top,
+          #51b205 0%,
+          #3c9e0a 100%
+        ); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(
+          top,
+          #51b205 0%,
+          #3c9e0a 100%
+        ); /* Opera 11.10+ */
+        background: -ms-linear-gradient(
+          top,
+          #51b205 0%,
+          #3c9e0a 100%
+        ); /* IE10+ */
+        background: linear-gradient(
+          to bottom,
+          #51b205 0%,
+          #3c9e0a 100%
+        ); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b205', endColorstr='#3c9e0a',GradientType=0 ); /* IE6-9 */
+        color: #fff;
+        display: block;
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+        padding: 16px 0;
+        text-decoration: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+      }
+
+      section:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      section#points-of-sale ul {
+        list-style-type: none;
+      }
+
+      #points-of-sale h2 {
+        height: 0;
+        text-indent: -10000px;
+      }
+
+      #points-of-sale li:nth-child(2) {
+        margin: 0 2%;
+      }
+
+      #points-of-sale li h3 {
+        text-align: center;
+        color: #888;
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 10px;
+      }
+
+      #points-of-sale p {
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        font-size: 14px;
+        color: #888;
+        line-height: 1.4em;
+      }
+
+      #clients,
+      #contact {
+        border-top: 1px solid #ccc;
+        padding-top: 30px;
+      }
+
+      #clients h2,
+      #contact h2 {
+        background: green;
+        color: #fff;
+        padding: 8px;
+        text-align: center;
+        width: 250px;
+        text-transform: uppercase;
+        position: relative;
+        top: -45px;
+        margin: 0 auto;
+        border-left: 16px solid #fff;
+        border-right: 16px solid #fff;
+      }
+
+      #clients img {
+        float: left;
+        width: 30%;
+      }
+
+      #clients blockquote {
+        float: right;
+        width: 66%;
+        margin-top: 20px;
+        text-align: center;
+        font-style: italic;
+        line-height: 1.6em;
+        color: #888;
+        padding-top: 50px;
+        background: url(images/quote.png) no-repeat top left;
+      }
+
+      #contact-methods {
+        float: left;
+      }
+
+      #contact-methods li {
+        list-style-type: none;
+        color: #888;
+        line-height: 30px;
+        clear: left;
+      }
+
+      #contact-methods li:before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin-right: 10px;
+        background: url(images/logo-sprite.png) no-repeat;
+      }
+
+      #contact-methods li:nth-child(1):before {
+        background-position: -158px 0;
+      }
+
+      #contact-methods li:nth-child(2):before {
+        background-position: -198px 0;
+      }
+
+      #contact-methods li:nth-child(3):before {
+        background-position: -238px 0;
+      }
+
+      #contact img {
+        float: right;
+      }
+
+      #social-nav {
+        clear: both;
+        position: relative;
+        top: -40px;
+      }
+
+      #social-nav li {
+        list-style-type: none;
+        float: left;
+        width: 40px;
+        height: 30px;
+        background: url(images/logo-sprite.png) no-repeat;
+        text-indent: -10000px;
+      }
+
+      #social-nav li:nth-child(2) {
+        background-position: -40px 0;
+      }
+
+      #social-nav li:nth-child(3) {
+        background-position: -80px 0;
+      }
+
+      #social-nav li:nth-child(4) {
+        background-position: -120px 0;
+      }
+
+      #social-nav a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1 id="logo">Green Design</h1>
+        <nav>
+          <h2>Main Navigation</h2>
+          <ul>
+            <li><a href="">Home</a><span>/</span></li>
+            <li><a href="">About</a><span>/</span></li>
+            <li><a href="">Portfolio</a><span>/</span></li>
+            <li><a href="">Clients</a><span>/</span></li>
+            <li><a href="">Contact</a><span>/</span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="lead-banner">
+      <img src="images/banner.jpg" alt="lead banner" />
+      <div class="banner-overlay">
+        <div class="wrapper">
+          <div class="banner-title">We Know Web Design</div>
+          <p>
+            With over 15 years experience you can be sure your website is in
+            safe hands
+          </p>
+          <a href="">View Our Work</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content">
+      <div class="wrapper">
+        <section id="points-of-sale">
+          <h2>Points of Sale</h2>
+          <ul>
+            <li name="pos-li">
+              <img src="images/cs-1.png" alt="web design" />
+              <h3>Web Design</h3>
+              <p>
+                quatis alique mos et aut occae cum, veliquaspit quo quam, si
+                idem reprorisqui doluptatur accum si sunt ut officiisto enecab
+                id et aut es et laboribusam endi rerum as minullorent officiatum
+                non cuscium quuntem
+              </p>
+            </li>
+            <li name="pos-li">
+              <img src="images/cs-2.png" alt="e-commerce" />
+              <h3>E-commerce</h3>
+              <p>
+                quatis alique mos et aut occae cum, veliquaspit quo quam, si
+                idem reprorisqui doluptatur accum si sunt ut officiisto enecab
+                id et aut es et laboribusam endi rerum as minullorent officiatum
+                non cuscium quuntem
+              </p>
+            </li>
+            <li name="pos-li">
+              <img src="images/cs-3.png" alt="seo" />
+              <h3>SEO</h3>
+              <p>
+                quatis alique mos et aut occae cum, veliquaspit quo quam, si
+                idem reprorisqui doluptatur accum si sunt ut officiisto enecab
+                id et aut es et laboribusam endi rerum as minullorent officiatum
+                non cuscium quuntem
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section id="clients">
+          <h2>What Our Clients Say</h2>
+          <img src="images/head.png" alt="quote" />
+          <blockquote>
+            quatis alique mos et aut occae cum, veliquaspit quo quam, si idem
+            reprorisqui doluptatur accum si sunt ut officiisto enecab id et aut
+            es et l
+          </blockquote>
+        </section>
+        <section id="contact">
+          <h2>Drop Us A Line</h2>
+          <ul id="contact-methods">
+            <li>555 555 5555</li>
+            <li>hello@whatever.com</li>
+            <li>
+              <span>Leaf Studios</span>
+              <span>Times Square</span>
+              <span>NY</span>
+            </li>
+          </ul>
+          <img src="images/map.png" alt="map" />
+          <ul id="social-nav">
+            <li class="facebook"><a href="">Facebook</a></li>
+            <li class="twitter"><a href="">Twitter</a></li>
+            <li class="pinterest"><a href="">Pinterest</a></li>
+            <li class="linked-in"><a href="">Linked In</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
